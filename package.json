@@ -35,6 +35,9 @@
     "recharts": "^2.12.3"
   },
   "devDependencies": {
+    "@it-incubator/eslint-config": "^1.0.2",
+    "@it-incubator/prettier-config": "^0.1.2",
+    "@it-incubator/stylelint-config": "^1.0.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -43,6 +46,7 @@
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "^1.13.0",
     "postcss-simple-vars": "^7.0.1",
+    "stylelint": "^16.1.0",
     "typescript": "^5"
   }
 }
