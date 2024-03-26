@@ -1,16 +1,15 @@
-import {Locale} from "./en";
+import { Locale } from './en'
 
 export const ru: Locale = {
-    buttons:{
-    clickMe:'Нажми меня'
-    },
-    navbar:{
-        trade:'Рынки',
-        charts: 'Графики',
-        portfolio:'Портфель',
-        reports:'Отчеты',
-        deposite:'Внести ссредства',
-        settings: 'Настройки'
-    }
+  buttons: {
+    clickMe: 'Нажми меня',
+  },
+  navbar: {
+    charts: 'Графики',
+    deposite: 'Внести ссредства',
+    portfolio: 'Портфель',
+    reports: 'Отчеты',
+    settings: 'Настройки',
+    trade: 'Рынки',
+  },
 }
-

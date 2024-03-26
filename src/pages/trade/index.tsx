@@ -1,8 +1,5 @@
-const Trade = ()=>{
-    return (
-        <div>
-            Trade
-        </div>
-    )
+const Trade = () => {
+  return <div>Trade</div>
 }
+
 export default Trade

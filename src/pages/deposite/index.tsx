@@ -1,8 +1,5 @@
- const Deposite = ()=>{
-    return (
-        <div>
-            Deposite
-        </div>
-    )
+const Deposite = () => {
+  return <div>Deposite</div>
 }
- export default Deposite
+
+export default Deposite

@@ -1,9 +1,5 @@
-const Charts = ()=>{
-    return (
-        <div>
-            Charts
-        </div>
-    )
+const Charts = () => {
+  return <div>Charts</div>
 }
 
 export default Charts

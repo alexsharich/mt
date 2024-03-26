@@ -1,8 +1,8 @@
 export const ROUTES = {
-    TRADE: '/',
-    CHARTS: '/charts',
-    PORTFOLIO: '/portfolio',
-    REPORTS: '/reports',
-    DEPOSITE: '/deposite',
-    SETTINGS: '/settings',
+  CHARTS: '/charts',
+  DEPOSITE: '/deposite',
+  PORTFOLIO: '/portfolio',
+  REPORTS: '/reports',
+  SETTINGS: '/settings',
+  TRADE: '/',
 }

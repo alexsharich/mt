@@ -1,15 +1,15 @@
 export const en = {
- buttons:{
-     clickMe:'Click me',
- },
-    navbar:{
-        trade:'Trade',
-        charts: 'Charts',
-        portfolio:'Portfolio',
-        reports:'Reports',
-        deposite:'Deposite',
-        settings: 'Settings'
-    }
+  buttons: {
+    clickMe: 'Click me',
+  },
+  navbar: {
+    charts: 'Charts',
+    deposite: 'Deposite',
+    portfolio: 'Portfolio',
+    reports: 'Reports',
+    settings: 'Settings',
+    trade: 'Trade',
+  },
 }
 
 export type Locale = typeof en

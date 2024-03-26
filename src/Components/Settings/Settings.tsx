@@ -1,29 +1,27 @@
-import {useDisclosure, useMediaQuery} from "@mantine/hooks";
-import {Button, Modal, NavLink} from "@mantine/core";
-import {useTranslation} from "@/shared/hooks/useTranslations";
-
+import { useTranslation } from '@/shared/hooks/useTranslations'
+import { Button, Modal, NavLink } from '@mantine/core'
+import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 
 type ModalProps = {
-    isOpen:boolean
+  isOpen: boolean
 }
-export const SettingsModal = ({isOpen}:ModalProps)=>{
+export const SettingsModal = ({ isOpen }: ModalProps) => {
+  const [opened, { close, open }] = useDisclosure(isOpen)
+  const isMobile = useMediaQuery('(max-width: 50em)')
+  const { t } = useTranslation()
 
-    const [opened, { open, close }] = useDisclosure(isOpen);
-    const isMobile = useMediaQuery('(max-width: 50em)');
-    const {t} = useTranslation()
-
-        return (
-            <>
-                <Modal
-                    opened={opened}
-                    onClose={close}
-                    title="SETTINGS"
-                    fullScreen={isMobile}
-                    transitionProps={{ transition: 'fade', duration: 200 }}
-                >
-                    SETTINGS
-                </Modal>
-                <NavLink label={t.navbar.settings} onClick={open}/>
-            </>
-        );
-    }
+  return (
+    <>
+      <Modal
+        fullScreen={isMobile}
+        onClose={close}
+        opened={opened}
+        title={'SETTINGS'}
+        transitionProps={{ duration: 200, transition: 'fade' }}
+      >
+        SETTINGS
+      </Modal>
+      <NavLink label={t.navbar.settings} onClick={open} />
+    </>
+  )
+}
