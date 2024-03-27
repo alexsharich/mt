@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 
+import { TickerTape } from '@/Components/TickerTape/TickerTape'
 import { LangSwitcher } from '@/shared/ui/LangSwitcher/LangSwitcher'
 import ThemeSwitcher from '@/shared/ui/ThemeSwitcher/ThemeSwitcher'
 import { AppShell, Flex } from '@mantine/core'
@@ -20,6 +21,7 @@ export const Layout: NextPage<PropsWithChildren> = props => {
           wrap={'wrap'}
         >
           <LangSwitcher />
+          <TickerTape />
           <ThemeSwitcher />
         </Flex>
       </AppShell.Header>

@@ -1,0 +1,8 @@
+.ticker-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker {
+  white-space: nowrap;
+}

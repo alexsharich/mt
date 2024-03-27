@@ -14,6 +14,11 @@ export const en = {
     settings: 'Settings',
     trade: 'Trade',
   },
+  tickerTape: {
+    currencyBYN: 'Currency BYN : ',
+    currencyEUR: 'Currency EUR : ',
+    currencyUSD: 'Currency USD : ',
+  },
 }
 
 export type Locale = typeof en

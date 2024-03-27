@@ -16,4 +16,9 @@ export const ru: Locale = {
     settings: 'Настройки',
     trade: 'Рынки',
   },
+  tickerTape: {
+    currencyBYN: 'Курс BYN рубля : ',
+    currencyEUR: 'Курс евро : ',
+    currencyUSD: 'Курс американского доллара : ',
+  },
 }
