@@ -1,5 +1,21 @@
+import { useState } from 'react'
+
+import { getLayoutWithSidebar } from '@/Components/WithSideBarLayout/WithSideBarLayout'
+import { useGetCurrencyQuery } from '@/services/currencySlice/currencyEndpoints'
+
 const Trade = () => {
-  return <div>Trade</div>
+  const [skip, setSkip] = useState(true)
+  const { data, isError, isLoading } = useGetCurrencyQuery('', { skip: skip })
+
+  return (
+    <div>
+      <button onClick={() => setSkip(false)}>Get currency</button>
+      <div>Trade</div>
+      <div>{data && JSON.stringify(data)}</div>
+    </div>
+  )
 }
 
 export default Trade
+
+Trade.getLayout = getLayoutWithSidebar

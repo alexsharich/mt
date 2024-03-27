@@ -4,5 +4,5 @@ export const ROUTES = {
   PORTFOLIO: '/portfolio',
   REPORTS: '/reports',
   SETTINGS: '/settings',
-  TRADE: '/',
+  TRADE: '/trade',
 }

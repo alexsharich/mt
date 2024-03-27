@@ -1,12 +1,13 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Image from 'next/image'
 
 import styles from '@/styles/Home.module.css'
 
+import { getBaseLayout } from '../Components/layout/BaseLayout/BaseLayout'
+
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <Head>
@@ -15,7 +16,10 @@ export default function Home() {
         <meta content={'width=device-width, initial-scale=1'} name={'viewport'} />
         <link href={'/favicon.ico'} rel={'icon'} />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}></main>
+      <main style={{ marginTop: '300px' }}>MANTAIN</main>
     </>
   )
 }
+Home.getLayout = getBaseLayout
+
+export default Home

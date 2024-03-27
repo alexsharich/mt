@@ -6,7 +6,11 @@ export const ru: Locale = {
   },
   navbar: {
     charts: 'Графики',
-    deposite: 'Внести ссредства',
+    deposite: 'Внести средства',
+    modal: {
+      colorTheme: 'Изменить стиль',
+      setings: 'Настройки',
+    },
     portfolio: 'Портфель',
     reports: 'Отчеты',
     settings: 'Настройки',

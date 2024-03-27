@@ -1,31 +1,29 @@
-import { Header } from '@/Components/Header/Header'
-import { Navbar } from '@/Components/Navbar/Navbar'
-import { ROUTES } from '@/shared/constants/routes'
-import { useTranslation } from '@/shared/hooks/useTranslations'
-import { LangSwitcher } from '@/shared/ui/LangSwitcher/LangSwitcher'
-import ThemeSwitcher from '@/shared/ui/ThemeSwitcher/ThemeSwitcher'
-import { AppShell, Burger, Button, Flex, NavLink } from '@mantine/core'
-import { useDisclosure } from '@mantine/hooks'
-import Link from 'next/link'
+import { useEffect } from 'react'
 
-function Home() {
+import { getBaseLayout } from '@/Components/layout/BaseLayout/BaseLayout'
+import { Loader } from '@/shared/ui/Loader/Loader'
+import { useDisclosure } from '@mantine/hooks'
+import { useRouter } from 'next/router'
+
+import s from './Home.module.css'
+
+function HomePage() {
   const [opened, { toggle }] = useDisclosure()
+  const router = useRouter()
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/portfolio')
+    }, 7000)
+  }, [])
 
   return (
-    <AppShell
-      header={{ height: 60 }}
-      navbar={{
-        breakpoint: 'sm',
-        collapsed: { mobile: !opened },
-        width: 200,
-      }}
-      padding={'md'}
-    >
-      <Header />
-      <Navbar />
-      <AppShell.Main>Main</AppShell.Main>
-    </AppShell>
+    <div className={s.homePage}>
+      Please wait <Loader />
+    </div>
   )
 }
 
-export default Home
+export default HomePage
+
+HomePage.getLayout = getBaseLayout

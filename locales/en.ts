@@ -5,6 +5,10 @@ export const en = {
   navbar: {
     charts: 'Charts',
     deposite: 'Deposite',
+    modal: {
+      colorTheme: 'Color theme',
+      setings: 'Settings',
+    },
     portfolio: 'Portfolio',
     reports: 'Reports',
     settings: 'Settings',

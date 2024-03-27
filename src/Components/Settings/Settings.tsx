@@ -1,6 +1,9 @@
 import { useTranslation } from '@/shared/hooks/useTranslations'
-import { Button, Modal, NavLink } from '@mantine/core'
+import { LangSwitcher } from '@/shared/ui/LangSwitcher/LangSwitcher'
+import ThemeSwitcher from '@/shared/ui/ThemeSwitcher/ThemeSwitcher'
+import { Modal } from '@mantine/core'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
+import Link from 'next/link'
 
 type ModalProps = {
   isOpen: boolean
@@ -16,12 +19,16 @@ export const SettingsModal = ({ isOpen }: ModalProps) => {
         fullScreen={isMobile}
         onClose={close}
         opened={opened}
-        title={'SETTINGS'}
+        title={t.navbar.modal.setings}
         transitionProps={{ duration: 200, transition: 'fade' }}
       >
-        SETTINGS
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          {t.navbar.modal.colorTheme} <ThemeSwitcher />
+        </div>
       </Modal>
-      <NavLink label={t.navbar.settings} onClick={open} />
+      <Link href={'#'} onClick={open}>
+        {t.navbar.settings}
+      </Link>
     </>
   )
 }
