@@ -1,15 +1,15 @@
-import { useState } from 'react'
-
 import { getLayoutWithSidebar } from '@/Components/WithSideBarLayout/WithSideBarLayout'
-import { useGetCurrencyQuery } from '@/services/currencySlice/currencyEndpoints'
+import { useLazyGetCurrencyQuery } from '@/services/currencySlice/currencyEndpoints'
+import { Button } from '@mantine/core'
 
 const Trade = () => {
-  const [skip, setSkip] = useState(true)
-  const { data, isError, isLoading } = useGetCurrencyQuery('', { skip: skip })
+  const [useLazyGetCurrency, { data, isError, isLoading }] = useLazyGetCurrencyQuery()
 
   return (
     <div>
-      <button onClick={() => setSkip(false)}>Get currency</button>
+      <Button color={'cyan'} disabled={isLoading} onClick={() => useLazyGetCurrency('')}>
+        Get currency
+      </Button>
       <div>Trade</div>
       <div>{JSON.stringify(data)}</div>
     </div>
