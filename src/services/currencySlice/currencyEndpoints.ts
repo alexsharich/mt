@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const currencyApi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://www.cbr-xml-daily.ru',
+    baseUrl: 'https://57aeef1f4f92097e.mokky.dev/favorites',
     credentials: 'include',
   }),
   endpoints: build => {

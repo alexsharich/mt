@@ -11,7 +11,7 @@ const Trade = () => {
     <div>
       <button onClick={() => setSkip(false)}>Get currency</button>
       <div>Trade</div>
-      <div>{data && JSON.stringify(data)}</div>
+      <div>{JSON.stringify(data)}</div>
     </div>
   )
 }
