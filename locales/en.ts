@@ -15,9 +15,9 @@ export const en = {
     trade: 'Trade',
   },
   tickerTape: {
-    currencyBYN: 'Currency BYN : ',
     currencyEUR: 'Currency EUR : ',
-    currencyUSD: 'Currency USD : ',
+    currencyPLN: 'Currency PLN : ',
+    currencyRUB: 'Currency RUB : ',
   },
 }
 

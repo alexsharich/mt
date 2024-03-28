@@ -2,7 +2,7 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 const initialState: any = {}
 
-export const currencySlice = createSlice({
+export const mokkySlice = createSlice({
   initialState,
   name: 'currencyReducer',
   reducers: {
@@ -10,4 +10,4 @@ export const currencySlice = createSlice({
   },
 })
 
-export const { setCurrency } = currencySlice.actions
+export const { setCurrency } = mokkySlice.actions

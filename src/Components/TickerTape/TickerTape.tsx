@@ -1,19 +1,21 @@
+import { useAppSelector } from '@/app/store/types/useAppSelector'
 import { useTranslation } from '@/shared/hooks/useTranslations'
-import { Text } from '@mantine/core'
 
 export const TickerTape = () => {
   const { t } = useTranslation()
+  const currencyValues = useAppSelector(state => state.currencyReducer)
 
   const currency = [
-    { isIncreased: true, name: t.tickerTape.currencyUSD, value: 100 },
-    { isIncreased: false, name: t.tickerTape.currencyEUR, value: 200 },
-    { isIncreased: true, name: t.tickerTape.currencyBYN, value: 300 },
+    { name: t.tickerTape.currencyRUB, value: currencyValues.RUB },
+    { name: t.tickerTape.currencyEUR, value: currencyValues.EUR },
+    { name: t.tickerTape.currencyPLN, value: currencyValues.PLN },
   ]
 
   return (
     <div className={'ticker-container'}>
       <marquee behavior={'scroll'} className={'ticker'}>
-        {currency.map(curr => `${curr.name} ${curr.value} ${curr.isIncreased ? '+' : '-'} `)}
+        {currency.map(curr => `${curr.name} ${curr.value}`)}
+        {/*{`${currency.EUR}`}*/}
       </marquee>
     </div>
   )
