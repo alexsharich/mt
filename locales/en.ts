@@ -3,13 +3,13 @@ export const en = {
     clickMe: 'Click me',
   },
   navbar: {
-    charts: 'Charts',
-    deposite: 'Deposite',
+    aluminum: 'Aluminum',
+    coffee: 'Coffee',
     modal: {
       colorTheme: 'Color theme',
       setings: 'Settings',
     },
-    portfolio: 'Portfolio',
+    naturalGas: 'Natural Gas',
     reports: 'Reports',
     settings: 'Settings',
     trade: 'Trade',

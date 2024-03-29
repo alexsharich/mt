@@ -1,7 +1,7 @@
 export const ROUTES = {
-  CHARTS: '/charts',
-  DEPOSITE: '/deposite',
-  PORTFOLIO: '/portfolio',
+  ALUMINUM: '/aluminum',
+  COFFEE: '/coffee',
+  NATURAL_GAS: '/natural-gas',
   REPORTS: '/reports',
   SETTINGS: '/settings',
   TRADE: '/trade',

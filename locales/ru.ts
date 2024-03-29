@@ -5,13 +5,13 @@ export const ru: Locale = {
     clickMe: 'Нажми меня',
   },
   navbar: {
-    charts: 'Графики',
-    deposite: 'Внести средства',
+    aluminum: 'Алюминий',
+    coffee: 'Кофе',
     modal: {
       colorTheme: 'Изменить стиль',
       setings: 'Настройки',
     },
-    portfolio: 'Портфель',
+    naturalGas: 'Натуральный газ',
     reports: 'Отчеты',
     settings: 'Настройки',
     trade: 'Рынки',

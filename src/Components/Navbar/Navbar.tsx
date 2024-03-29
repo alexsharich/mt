@@ -15,11 +15,12 @@ export const Navbar = () => {
   return (
     <AppShell.Navbar>
       <div className={s.navbarLinks}>
-        <Link href={ROUTES.TRADE}>{t.navbar.trade}</Link>
-        <Link href={ROUTES.CHARTS}>{t.navbar.charts} </Link>
-        <Link href={ROUTES.PORTFOLIO}>{t.navbar.portfolio}</Link>
+        <Link href={ROUTES.ALUMINUM}>{t.navbar.aluminum}</Link>
+        <Link href={ROUTES.COFFEE}>{t.navbar.coffee} </Link>
+        <Link href={ROUTES.NATURAL_GAS}>{t.navbar.naturalGas}</Link>
         <Link href={ROUTES.REPORTS}>{t.navbar.reports}</Link>
-        <Link href={ROUTES.DEPOSITE}>{t.navbar.deposite}</Link>
+        <Link href={ROUTES.TRADE}>{t.navbar.trade}</Link>
+
         <SettingsModal isOpen={isOpenModal} />
       </div>
     </AppShell.Navbar>
