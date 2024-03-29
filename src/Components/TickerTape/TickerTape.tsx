@@ -14,7 +14,7 @@ export const TickerTape = () => {
   return (
     <div className={'ticker-container'}>
       <marquee behavior={'scroll'} className={'ticker'}>
-        {currency.map(curr => `${curr.name} ${curr.value}`)}
+        {currency.map(curr => `${curr.name} ${curr.value} `)}
         {/*{`${currency.EUR}`}*/}
       </marquee>
     </div>

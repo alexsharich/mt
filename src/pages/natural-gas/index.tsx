@@ -1,10 +1,8 @@
 import BarChart from '@/Components/Charts/BarChart/BarChart'
 import MyLineChart from '@/Components/Charts/Line/Line'
+import RoundChart from '@/Components/Charts/Round/Round'
 import { getLayoutWithSidebar } from '@/Components/WithSideBarLayout/WithSideBarLayout'
-import {
-  useLazyGetAluminumQuery,
-  useLazyGetNaturalGasQuery,
-} from '@/services/currencySlice/mokkyEndpoints'
+import { useLazyGetNaturalGasQuery } from '@/services/currencySlice/mokkyEndpoints'
 
 const NaturalGas = () => {
   const [useLazyGetNaturalGas, { data, isError, isLoading }] = useLazyGetNaturalGasQuery()
@@ -18,6 +16,7 @@ const NaturalGas = () => {
       <button onClick={() => useLazyGetNaturalGas()}>Current Charts</button>
       <BarChart chartTitle={chartTitle} dataFromServer={infoForRender} />
       <MyLineChart chartTitle={chartTitle} dataFromServer={infoForRender} />
+      <RoundChart chartTitle={chartTitle} dataFromServer={infoForRender} />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import BarChart from '@/Components/Charts/BarChart/BarChart'
 import MyLineChart from '@/Components/Charts/Line/Line'
+import RoundChart from '@/Components/Charts/Round/Round'
 import { getLayoutWithSidebar } from '@/Components/WithSideBarLayout/WithSideBarLayout'
 import { useLazyGetAluminumQuery } from '@/services/currencySlice/mokkyEndpoints'
 
@@ -14,6 +15,7 @@ const Aluminum = () => {
       <button onClick={() => useLazyGetAluminum()}>Current Charts</button>
       <BarChart chartTitle={chartTitle} dataFromServer={infoForRender} />
       <MyLineChart chartTitle={chartTitle} dataFromServer={infoForRender} />
+      <RoundChart chartTitle={chartTitle} dataFromServer={infoForRender} />
     </>
   )
 }

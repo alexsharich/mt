@@ -1,6 +1,7 @@
 import { getLayoutWithSidebar } from '@/Components/WithSideBarLayout/WithSideBarLayout'
 import { useAppDispatch } from '@/app/store/store'
 import { useAppSelector } from '@/app/store/types/useAppSelector'
+import { useLazyGetAluminumQuery } from '@/services/currencySlice/mokkyEndpoints'
 import { currencyThunkCreator } from '@/services/currencyWithCreateThunk/currency-reducer'
 import { Loader } from '@/shared/ui/Loader/Loader'
 

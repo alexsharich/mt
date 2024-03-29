@@ -1,10 +1,8 @@
 import BarChart from '@/Components/Charts/BarChart/BarChart'
 import MyLineChart from '@/Components/Charts/Line/Line'
+import RoundChart from '@/Components/Charts/Round/Round'
 import { getLayoutWithSidebar } from '@/Components/WithSideBarLayout/WithSideBarLayout'
-import {
-  useLazyGetCoffeeQuery,
-  useLazyGetNaturalGasQuery,
-} from '@/services/currencySlice/mokkyEndpoints'
+import { useLazyGetCoffeeQuery } from '@/services/currencySlice/mokkyEndpoints'
 
 const Coffee = () => {
   const [useLazyGetCoffee, { data, isError, isLoading }] = useLazyGetCoffeeQuery()
@@ -18,6 +16,7 @@ const Coffee = () => {
       <button onClick={() => useLazyGetCoffee()}>Current Charts</button>
       <BarChart chartTitle={chartTitle} dataFromServer={infoForRender} />
       <MyLineChart chartTitle={chartTitle} dataFromServer={infoForRender} />
+      <RoundChart chartTitle={chartTitle} dataFromServer={infoForRender} />
     </>
   )
 }
